@@ -25,7 +25,11 @@ export default function Properties({ availableProperties }) {
     return (
         <>
             <div className="max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl bg-white rounded-lg shadow-lg xl:max-w-7xl mx-auto p-4 my-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                {availableProperties.slice(0, itemsPerPage * page).map((property) => <PropertyItem key={property.id} property={property} />)}
+                {availableProperties.length > 0 ?
+                    availableProperties.slice(0, itemsPerPage * page).map((property) => <PropertyItem key={property.id} property={property} />)
+                    :
+                    <p className="text-4xl">No results found...</p>
+                }
             </div><div ref={loader}></div>
         </>
     )
