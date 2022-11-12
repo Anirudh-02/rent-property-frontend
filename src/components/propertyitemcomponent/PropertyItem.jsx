@@ -10,7 +10,7 @@ export default function PropertyItem({ property }) {
                         <h2 className="text-lg font-semibold">{property.city}</h2>
                         <p className="text-gray-800">{property.name}, {property.address}</p>
                     </div>
-                    <button className="rounded-full border border-red-600 hover:border-2 active:bg-red-600 p-4 px-5">
+                    <button className="rounded-full border border-red-600 hover:border-2 active:bg-red-600 w-10 h-10">
                         <i className="fa-regular fa-heart"></i>
                     </button>
                 </div>
