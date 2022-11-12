@@ -7,7 +7,7 @@ export default function Navbar({ theme, changeTheme }) {
                 <li className="inline font-medium cursor-pointer hover:bg-gray-400 dark:hover:bg-gray-700 hover:rounded-md p-1 focus:bg-gray-400">Sell</li>
                 <li className="ml-auto">
                     <button onClick={changeTheme}>
-                        {theme == 'light' ? <i class="fa-regular fa-moon"></i> : <i class="fa-regular fa-sun"></i>}
+                        {theme == 'light' ? <i className="fa-regular fa-moon"></i> : <i className="fa-regular fa-sun"></i>}
                     </button>
                 </li>
             </ul>

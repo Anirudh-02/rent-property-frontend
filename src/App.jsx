@@ -47,7 +47,6 @@ function App() {
   }
 
   function clearFilterOptions() {
-    console.log('run');
     let val = ""
     setLocation(val)
     setPrice(val)
