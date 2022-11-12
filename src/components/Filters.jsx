@@ -7,7 +7,7 @@ import PropertyTypeFilter from "./filtercomponents/PropertyTypeFilter";
 export default function Filters({ location, type, when, price, clearFilterOptions, setFilterOptions, filterProperties }) {
     return (
         <>
-            <div className="max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl bg-white rounded-lg shadow-lg xl:max-w-7xl mx-auto p-4 my-4">
+            <div className="max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl bg-white rounded-lg shadow-lg xl:max-w-7xl mx-auto p-4 my-4 dark:bg-gray-900 dark:text-white">
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2">
                     <LocationFilter location={location} setFilterOptions={setFilterOptions} />
                     <MoveInDateFilter when={when} setFilterOptions={setFilterOptions} />
