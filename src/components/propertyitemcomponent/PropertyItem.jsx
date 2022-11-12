@@ -2,7 +2,7 @@
 export default function PropertyItem({ property }) {
     return (
         <div>
-            <div className="max-w-96 h-fit border hover:border-2 border-black rounded-lg p-3 dark:bg-slate-800 dark:text-white dark:border-gray-400">
+            <div className="max-w-96 h-full flex flex-col justify-between border hover:border-2 border-black rounded-lg p-3 dark:bg-slate-800 dark:text-white dark:border-gray-400">
                 <img className="max-h-40 mx-auto border-2 border-gray-800 rounded-md my-1" src={property.imgUrl} alt="Image" />
                 <h1 className="text-3xl">{new Intl.NumberFormat('en-IN', { style: "currency", currency: "INR", maximumSignificantDigits: 4 }).format(property.price)}<span className="text-lg text-gray-600 dark:text-gray-300">/per annum</span></h1>
                 <div className="flex justify-between my-1">
