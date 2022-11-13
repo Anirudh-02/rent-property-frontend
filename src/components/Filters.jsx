@@ -3,7 +3,6 @@ import MoveInDateFilter from "./filtercomponents/MoveInDateFilter";
 import PriceFilter from "./filtercomponents/PriceFilter";
 import PropertyTypeFilter from "./filtercomponents/PropertyTypeFilter";
 
-
 export default function Filters({ location, type, when, price, clearFilterOptions, setFilterOptions, filterProperties }) {
     return (
         <>

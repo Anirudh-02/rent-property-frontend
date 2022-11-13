@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Filters from './components/Filters'
 import Navbar from './components/Navbar'
 import Properties from './components/Properties'
@@ -36,9 +36,9 @@ function App() {
       propertyData.filter((property) => {
         if (
           (location ? property.city == location : 1) &&
-          (price ? (property.price < price && property.price >= (price - 1000000)) : 1) &&
+          (price ? (property.price < price && property.price >= (price - 15000)) : 1) &&
           (type ? property.type == type.toLowerCase() : 1) &&
-          (when ? new Date(when).getTime() <= new Date(property.moveInDate).getTime() : 1)
+          (when ? new Date(when).getTime() >= new Date(property.moveInDate).getTime() : 1)
         ) {
           return property
         }
